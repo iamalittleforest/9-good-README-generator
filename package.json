@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/iamalittleforest/9-good-README-generator#readme",
   "dependencies": {
+    "fs": "0.0.1-security",
     "inquirer": "^8.0.0"
   }
 }
