@@ -7,57 +7,56 @@ const questions = [
   {
     type: "input",
     name: "title",
-    message: "",
+    message: "Project Title: ",
   },
   {
     type: "input",
     name: "description",
-    message: ""
+    message: "Description: "
   },
   {
     type: "input",
     name: "installation",
-    message: "",
+    message: "Installation Instructions: ",
   },
   {
     type: "input",
     name: "usage",
-    message: ""
+    message: "Usage Information: "
   },
   {
     type: "list",
     name: "license",
-    message: "",
+    message: "License: ",
     choices: []
   },
   {
     type: "input",
     name: "contributing",
-    message: ""
+    message: "Contribution Guidelines: "
   },
   {
     type: "input",
     name: "tests",
-    message: ""
-  },
-  {
-    type: "input",
-    name: "questions",
-    message: ""
+    message: "Test Instructions"
   },
   {
     type: "input",
     name: "username",
-    message: ""
+    message: "Enter GitHub username: "
   },
   {
     type: "input",
     name: "email",
-    message: ""
+    message: "Enter email address: "
   }];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) =>
+  err ? console.log(err) : console.log('README file generated')
+  );
+}
 
 // TODO: Create a function to initialize app
 function init() {}
