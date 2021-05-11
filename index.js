@@ -1,11 +1,11 @@
-// Include packages needed for this application
+// import external packages
 const inquirer = require("inquirer");
 const fs = require("fs");
 
 // import generateMarkdown module
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+// array of questions for user input
 const questions = [
   {
     type: "input",
@@ -56,18 +56,18 @@ const questions = [
     message: "Enter email address: "
   }];
 
-// TODO: Create a function to write README file
+// function to generate REAMDE file based on user input
+function init() {
+  inquirer.prompt(questions)
+    .then((data) => writeToFile("README_sample.md", generateMarkdown(data)));
+};
+  
+// function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) =>
   err ? console.log(err) : console.log('README file generated')
   );
 }
 
-// TODO: Create a function to initialize app
-function init() {
-  inquirer.prompt(questions)
-    .then((data) => writeToFile("README_sample.md", generateMarkdown(data)));
-};
-
-// Function call to initialize app
+// initialize
 init();
