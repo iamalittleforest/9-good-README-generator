@@ -1,11 +1,24 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+function renderLicenseBadge(data) {
+  if(`${data.license}` === "MIT") {
+    return "![GitHub](https://img.shields.io/badge/license-MIT-blueviolet)";
+  } else if (`${data.license}` === "Apache 2.0") {
+    return "![GitHub](https://img.shields.io/badge/license-Apache%202.0-blueviolet)";
+  } else if (`${data.license}` === "GPLv3") {
+    return "![GitHub](https://img.shields.io/badge/license-GPLv3-blueviolet)";
+  } else if (`${data.license}` === "BSD 3") {
+    return "![GitHub](https://img.shields.io/badge/license-BSD%203-blueviolet)";
+  } else {
+    return "";
+  }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
