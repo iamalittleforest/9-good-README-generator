@@ -1,7 +1,8 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const util = require("util");
+
+// import generateMarkdown module
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
@@ -20,6 +21,7 @@ const questions = [
     type: "input",
     name: "installation",
     message: "Installation Instructions: ",
+    default: "npm i"
   },
   {
     type: "input",
@@ -30,7 +32,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "License: ",
-    choices: []
+    choices: ["MIT", "Apache 2.0", "GPLv3", "BSD 3", "None"]
   },
   {
     type: "input",
@@ -40,7 +42,8 @@ const questions = [
   {
     type: "input",
     name: "tests",
-    message: "Test Instructions"
+    message: "Test Instructions",
+    default: "npm test"
   },
   {
     type: "input",
@@ -63,7 +66,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions)
-    .then((data) => writeToFile("README.md", generateMarkdown(data)));
+    .then((data) => writeToFile("README_sample.md", generateMarkdown(data)));
 };
 
 // Function call to initialize app
