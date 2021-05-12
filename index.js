@@ -59,7 +59,7 @@ const questions = [
 // function to generate REAMDE file based on user input
 function init() {
   inquirer.prompt(questions)
-    .then((data) => writeToFile("README_sample.md", generateMarkdown(data)));
+    .then((data) => writeToFile("./output/README_sample.md", generateMarkdown(data)));
 };
   
 // function to write README file
