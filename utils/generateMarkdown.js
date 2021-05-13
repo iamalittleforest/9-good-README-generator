@@ -42,7 +42,10 @@ This project is licensed under the ${data.license} License.
 ${data.contributing}
 
 ## Tests
+Run the following command to test:
+\`\`\`
 ${data.tests}
+\`\`\`
 
 ## Questions
 If you have any questions, contact me directly at ${data.email}. See more of my work by visiting my [GitHub Profile](https://github.com/${data.username}/).
