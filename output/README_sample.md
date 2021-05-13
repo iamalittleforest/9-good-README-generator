@@ -29,10 +29,13 @@ node index.js
 This project is licensed under the MIT License.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue to discuss the proposed changes.
+Pull requests are welcome. For major changes, open an issue to discuss the proposed changes.
 
 ## Tests
+Run the following command to test:
+```
 npm test
+```
 
 ## Questions
 If you have any questions, contact me directly at wykobayashi@gmail.com. See more of my work by visiting my [GitHub Profile](https://github.com/iamalittleforest/).
