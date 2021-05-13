@@ -1,9 +1,9 @@
 
 # Good README Generator
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-Creates a README file
+This application enables users to dynamically generate a professional README.md file based on the user's input.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -14,16 +14,22 @@ Creates a README file
 * [Questions](#questions)
 
 ## Installation
+Run the following command to install:
+```
 npm i
+```
 
 ## Usage
-Use freely
+Run the following command to use:
+```
+node index.js
+```
 
 ## License
-This project is licensed under the GPLv3 License.
+This project is licensed under the MIT License.
 
 ## Contributing
-Submit a pull request
+Pull requests are welcome. For major changes, please open an issue to discuss the proposed changes.
 
 ## Tests
 npm test

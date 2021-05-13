@@ -24,10 +24,16 @@ ${data.description}
 * [Questions](#questions)
 
 ## Installation
+Run the following command to install:
+\`\`\`
 ${data.installation}
+\`\`\`
 
 ## Usage
+Run the following command to use:
+\`\`\`
 ${data.usage}
+\`\`\`
 
 ## License
 This project is licensed under the ${data.license} License.
