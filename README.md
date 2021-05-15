@@ -40,7 +40,7 @@ THEN I am taken to the corresponding section of the README
 <img src="assets/images/README-screenshot.png" alt="screenshot">
 
 ## Demo
-[Walkthrough Video](./assets/images/README-walkthrough.mp4)
+[Walkthrough Video](https://iamalittleforest.github.io/9-good-README-generator/assets/images/README-walkthrough.mp4)
 
 ## License
 MIT License
