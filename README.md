@@ -6,7 +6,7 @@
 * Inquirer Package
 
 ## Description
-This application enables users to dynamically generate a professional README.md file based on the user's input.
+An application that enables users to dynamically generate a professional README.md file based on the user's input.
 
 ## Screenshot
 <img src="assets/images/README-screenshot.png" alt="screenshot">
